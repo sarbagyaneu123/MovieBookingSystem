@@ -1,37 +1,37 @@
 # 🎬 MovieBookingSystem
 
-A terminal-based movie ticket booking system built with Python and SQLite. This project enables users to manage movies, showtimes, and bookings through a simple command-line interface. It demonstrates use of SQLite for data persistence, modular Python programming, and practical CRUD operations.
+A terminal-based movie ticket booking system built with **Python** and **SQLite**. This project allows users to manage movies, showtimes, and bookings through a simple command-line interface. It demonstrates SQLite-based data persistence, modular Python design, and CRUD operations in a real-world scenario.
 
 ---
 
 ## 🚀 Features
 
-- 👤 Admin & User modes  
-- 🎞️ Add, list, and remove movies  
-- 🕒 Add, list, and remove showtimes for movies  
-- 🎟️ Book seats for showtimes and manage bookings  
-- 🗃️ SQLite database backend (`cinema.db`) for persistent storage  
-- 🧩 Modular code structure for maintainability
+- 👤 Admin & User Modes  
+- 🎞️ Add, List, and Remove Movies  
+- 🕒 Manage Showtimes for Movies  
+- 🎟️ Book Seats and Manage Bookings  
+- 🗃️ SQLite Database Backend (`cinema.db`)  
+- 🧩 Modular Code for Better Maintainability  
 
 ---
 
 ## 📁 Project Structure
 
 MovieBookingSystem/
-├── main.py # Application entry point and menus
-├── database.py # SQLite database connection and initialization
-├── movie.py # Movie management (CRUD)
-├── showtime.py # Showtime management (CRUD)
-├── booking.py # Booking management
-├── cinema.db # SQLite database file (created on init)
+├── main.py # Application entry point and menu system
+├── database.py # SQLite DB connection and table initialization
+├── movie.py # Movie CRUD operations
+├── showtime.py # Showtime CRUD operations
+├── booking.py # Booking logic
+├── cinema.db # SQLite DB file (auto-created)
 └── README.md # Project documentation
----
+
 
 ## 💻 How to Run
 
-1. Clone the repository:
+1. **Clone the repository:**
 
-```bash
+
 git clone https://github.com/sarbagyaneu123/MovieBookingSystem.git
 cd MovieBookingSystem
 Run the program:
@@ -40,31 +40,56 @@ bash
 Copy
 Edit
 python main.py
-The program will initialize the database on first run and create necessary tables if missing.
+💡 The database (cinema.db) will be created automatically on the first run.
 
 📝 Usage Overview
-Admin Menu: Manage movies, showtimes, bookings, and perform removals.
+Admin Menu:
 
-User Menu: View movies, showtimes, make bookings, and view your bookings.
+Add/List/Remove Movies
 
-Booking Flow: Choose a showtime from available options, enter your name and number of seats, booking is confirmed if seats are available.
+Add/List/Remove Showtimes
 
-Data Persistence: All data is stored in the cinema.db SQLite database file.
+View and Cancel Bookings
+
+User Menu:
+
+View Movies and Showtimes
+
+Book Tickets
+
+View Your Bookings
+
+Booking Flow:
+
+Select movie and showtime
+
+Enter your name and number of seats
+
+Booking is confirmed if seats are available
 
 👨‍💻 Code Highlights
-database.py handles DB connection and creates tables if they don't exist.
+database.py: Initializes SQLite DB and required tables
 
-movie.py manages adding, listing, and removing movies.
+movie.py: Handles movie-related CRUD operations
 
-showtime.py manages showtimes linked to movies.
+showtime.py: Manages showtimes linked to movies
 
-booking.py lets users book seats, list bookings, and cancel bookings.
+booking.py: Handles seat booking and cancellation logic
 
-main.py provides a CLI menu for admin and user interactions.
+main.py: CLI-based interface for both Admin and User
 
 🎯 Purpose
-This project was developed as part of an assessment for the Analyst Trainee role. It demonstrates database integration, user input validation, and clean modular coding practices.
+This project was developed as part of the Analyst Trainee Assessment. It demonstrates proficiency in:
+
+Database integration
+
+Command-line interface development
+
+Modular and scalable code design
+
+Real-world application of CRUD logic
 
 📫 Author
 Sarbagya Neupane
-GitHub: "https://github.com/sarbagyaneu123"
+🔗 https://github.com/sarbagyaneu123 
+
