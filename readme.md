@@ -1,95 +1,61 @@
-# 🎬 MovieBookingSystem
+# 🎟️ Movie Ticket Booking System
 
-A terminal-based movie ticket booking system built with **Python** and **SQLite**. This project allows users to manage movies, showtimes, and bookings through a simple command-line interface. It demonstrates SQLite-based data persistence, modular Python design, and CRUD operations in a real-world scenario.
-
----
-
-## 🚀 Features
-
-- 👤 Admin & User Modes  
-- 🎞️ Add, List, and Remove Movies  
-- 🕒 Manage Showtimes for Movies  
-- 🎟️ Book Seats and Manage Bookings  
-- 🗃️ SQLite Database Backend (`cinema.db`)  
-- 🧩 Modular Code for Better Maintainability  
+A simple Python-based movie ticket booking system using SQLite. It allows users to view available movies and showtimes, book tickets, and manage bookings via a command-line interface. The system simulates a real-world movie theater booking experience with an interactive menu.
 
 ---
-
-## 📁 Project Structure
-
-MovieBookingSystem/
-├── main.py # Application entry point and menu system
-├── database.py # SQLite DB connection and table initialization
-├── movie.py # Movie CRUD operations
-├── showtime.py # Showtime CRUD operations
-├── booking.py # Booking logic
-├── cinema.db # SQLite DB file (auto-created)
-└── README.md # Project documentation
-
 
 ## 💻 How to Run
 
 1. **Clone the repository:**
-
-
-git clone https://github.com/sarbagyaneu123/MovieBookingSystem.git
+git clone https://github.com/sarbagyaneu123/MovieBookingSystem
+2. Navigate into the project folder:
 cd MovieBookingSystem
-Run the program:
+3. Run the application:
+python main.py
 
-bash
+🐍 Python Requirements
+Python Version: 3.10+
+
+Libraries Used:
+
+sqlite3 (built-in)
+
+📌 Note: This project uses only Python's standard library. No need to install external packages.
+
+📂 Project Structure
+plaintext
 Copy
 Edit
-python main.py
-💡 The database (cinema.db) will be created automatically on the first run.
+MovieBookingSystem/
+├── main.py               # Entry point of the application
+├── booking_system.py     # Handles booking logic
+├── database.py           # Manages SQLite DB operations
+├── utils.py              # Utility functions (e.g., validation)
+├── movie.db              # SQLite database file
+└── README.md             # Project documentation
 
-📝 Usage Overview
-Admin Menu:
+📌 Features
+View available movies and showtimes
 
-Add/List/Remove Movies
+Book tickets by entering movie ID, seat number, and name
 
-Add/List/Remove Showtimes
+View all bookings stored in the database
 
-View and Cancel Bookings
+Cancel a booking
 
-User Menu:
+Prevents duplicate seat bookings
 
-View Movies and Showtimes
+Clean and readable CLI interface
 
-Book Tickets
+🛠️ Future Improvements
+Add GUI with Tkinter or PyQt
 
-View Your Bookings
+Include admin panel for movie management
 
-Booking Flow:
+Add user login system
 
-Select movie and showtime
+📄 License
+This project is open-source and free to use.
 
-Enter your name and number of seats
-
-Booking is confirmed if seats are available
-
-👨‍💻 Code Highlights
-database.py: Initializes SQLite DB and required tables
-
-movie.py: Handles movie-related CRUD operations
-
-showtime.py: Manages showtimes linked to movies
-
-booking.py: Handles seat booking and cancellation logic
-
-main.py: CLI-based interface for both Admin and User
-
-🎯 Purpose
-This project was developed as part of the Analyst Trainee Assessment. It demonstrates proficiency in:
-
-Database integration
-
-Command-line interface development
-
-Modular and scalable code design
-
-Real-world application of CRUD logic
-
-📫 Author
-Sarbagya Neupane
-🔗 https://github.com/sarbagyaneu123 
-
+👨‍💻 Author
+Developed by Sarbagya Neupane
